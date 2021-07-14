@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <form action="https://handlers.education.launchcode.org/request-parrot" method="POST">
+        <label>Test Name</label>
+        <input type="text" name="testName"/>
+
+        <div>
+        <label>Test Date</label>
+        <input type="date" name="testDate" />
+        </div>
+
+        <div>
+        <label>Rocket Type</label>
+            <select name="rockets">
+                <option>Brant</option>
+                <option>Lynx</option>
+                <option>Orion</option>
+                <option>Terrier</option>
+            </select>
+        </div>
+
+        <div>
+        <label>Number of Rocket Boosters</label>
+        <input type="number" name="boosterCount" min="1" max="10" />
+        </div>
+
+        <div>Wind Rating:
+               <label>No Wind</label>
+               <input type="radio" name="windRating" value="0"/>
+               <label>Mild</label>
+               <input type="radio" name="windRating" value="10" />
+               <label>Strong</label>
+               <input type="radio" name="windRating" value="20" />
+        </div>
+
+        <div>Use production grade servers:
+                <label>On</label>
+                <input type="checkbox" value="on" />
+                <label>Off</label>
+                <input type="checkbox" value="off" />  
+        </div>
+
+
+
+
+        <button>Run Simulation</button>
+    </form>
+
+
+
+</body>
+</html>
